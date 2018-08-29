@@ -2,3 +2,5 @@ requests
 xmltodict
 nose
 coverage
+json
+smtplib
