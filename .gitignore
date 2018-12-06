@@ -7,6 +7,7 @@ __pycache__/
 
 # Distribution / packaging
 examples/get_search_results.py
+examples/listfile.txt
 .Python
 env/
 build/
