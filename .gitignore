@@ -6,7 +6,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-get_search_results.py
+examples/get_search_results.py
 .Python
 env/
 build/
