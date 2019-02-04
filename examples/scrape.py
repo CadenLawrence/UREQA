@@ -11,6 +11,8 @@ def getAddresses():
     }
     addresses = []
     newaddresses = []
+    prices = []
+    newprices = []
     with requests.Session() as s:
         url = 'https://www.zillow.com/homes/for_sale/Marion-OH-43302/'
         r = s.get(url, headers=req_headers)
@@ -51,8 +53,8 @@ def getAddresses():
                         addresses.append(address)
             except:
                 pass
-                #print('An error occured')       
-    with open('C:\\Users\\balle\\Desktop\\zill\\python-zillow\\examples\\listfile.txt', 'r+') as text:
+                #print('An error occured')
+    with open('C:\\Users\\balle\\Desktop\\python-zillow\\examples\\listfile.txt', 'r+') as text:
         for address in addresses:
             if not any(address in line for line in text):
                 text.write(address+"\n")
